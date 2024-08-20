@@ -2,9 +2,10 @@
   "name": "maps-app",
   "version": "0.0.0",
   "scripts": {
+    "envs": "node ./scripts/set-envs.js",
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run envs && ng serve",
+    "build": "npm run envs && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:mapsApp": "node dist/maps-app/server/server.mjs"
@@ -22,6 +23,7 @@
     "@angular/router": "^17.2.0",
     "@angular/ssr": "^17.2.3",
     "express": "^4.18.2",
+    "mapbox-gl": "^3.5.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

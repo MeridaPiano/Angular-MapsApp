@@ -1,6 +1,13 @@
 # MapsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+No  usar directamente en AngularCLI (a menos que esten creadas las variables de entorno), ya que las variables de entorno se crean basados en el .env
+
+# Pasos
+1. Clonar en .env.template y renombrar a .env
+2. Llenar las variables de entorno acorde
+3. Crear Angular envs (opcional)
+
+npm run envs
 
 ## Development server
 
